@@ -1,0 +1,528 @@
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.App-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.App-header h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.App-header p {
+  color: #666;
+  font-size: 18px;
+}
+
+.demo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.control-btn {
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.control-btn:hover {
+  background: #0056b3;
+}
+
+.editor-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.editor-container h3 {
+  margin: 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.demo-editor {
+  border: none;
+  margin: 0;
+}
+
+.output-container {
+  background: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.output-container h3 {
+  margin: 0;
+  padding: 15px;
+  background: #e9ecef;
+  border-bottom: 1px solid #ddd;
+}
+
+.html-output {
+  padding: 15px;
+  margin: 0;
+  background: #f8f9fa;
+  border: none;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.features-list {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.features-list h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.features-list ul {
+  line-height: 1.8;
+}
+
+.features-list li {
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .demo-container {
+    padding: 10px;
+  }
+
+  .controls {
+    justify-content: center;
+  }
+
+  .control-btn {
+    flex: 1;
+    min-width: 120px;
+  }
+}
+
+/* Add these styles to your demo/src/App.css */
+
+/* Enhanced button styling */
+.populate-btn {
+  background: #28a745 !important;
+  font-weight: bold;
+}
+
+.populate-btn:hover {
+  background: #218838 !important;
+}
+
+/* Output container styling */
+.output-container {
+  background: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.output-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #e9ecef;
+  border-bottom: 1px solid #ddd;
+}
+
+.output-header h3 {
+  margin: 0;
+}
+
+.copy-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.copy-btn {
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.copy-btn:hover {
+  background: #0056b3;
+}
+
+.populated-preview {
+  padding: 15px;
+  background: white;
+  border: 1px solid #ddd;
+  margin: 10px;
+  border-radius: 4px;
+  font-family: inherit;
+  line-height: 1.6;
+}
+
+/* Instructions styling */
+.instructions {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.instructions h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.instructions ol {
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+.instructions ol li {
+  margin-bottom: 10px;
+}
+
+.tip-box {
+  background: #e7f3ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border-left: 4px solid #007bff;
+}
+
+.tip-box h4 {
+  margin-top: 0;
+  color: #0056b3;
+}
+
+.tip-box ul {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.tip-box li {
+  margin-bottom: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .output-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .copy-buttons {
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .copy-btn {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+/* Add these styles to your demo/src/App.css */
+
+/* Configuration section */
+.config-section {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #dee2e6;
+}
+
+.config-section h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #495057;
+}
+
+.config-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: end;
+}
+
+.config-inputs label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 500;
+  color: #495057;
+}
+
+.config-input {
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'Courier New', monospace;
+  background: white;
+  width: 80px;
+}
+
+.config-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.example-text {
+  padding: 8px 12px;
+  background: #e9ecef;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  color: #0056b3;
+  align-self: end;
+}
+
+/* Delimiter examples section */
+.delimiter-examples {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  border-left: 4px solid #28a745;
+}
+
+.delimiter-examples h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #155724;
+}
+
+.delimiter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.delimiter-example {
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+
+.delimiter-example strong {
+  color: #495057;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.delimiter-example code {
+  background: #f8f9fa;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  color: #0056b3;
+  border: 1px solid #dee2e6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .config-inputs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .config-input {
+    width: 100%;
+  }
+
+  .example-text {
+    align-self: stretch;
+    text-align: center;
+  }
+
+  .delimiter-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Prompt toggle styling */
+.prompt-toggle {
+  background: #e7f3ff;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #b3d9ff;
+  margin-top: 15px;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.prompt-toggle:hover {
+  background: #d0ebff;
+}
+
+.prompt-toggle input[type="checkbox"] {
+  margin: 0;
+  transform: scale(1.2);
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  width: 90%;
+  animation: modalFadeIn 0.2s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 20px;
+}
+
+.modal-content p {
+  margin-bottom: 15px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.variable-example {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 6px;
+  border-left: 4px solid #007bff;
+  font-family: 'Courier New', monospace;
+}
+
+.variable-example code {
+  background: #e9ecef;
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: #0056b3;
+  font-weight: bold;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #dee2e6;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: border-color 0.2s;
+}
+
+.modal-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.modal-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  min-width: 80px;
+}
+
+.modal-btn-primary {
+  background: #007bff;
+  color: white;
+}
+
+.modal-btn-primary:hover {
+  background: #0056b3;
+}
+
+.modal-btn-secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.modal-btn-secondary:hover {
+  background: #5a6268;
+}
+
+/* Responsive modal */
+@media (max-width: 480px) {
+  .modal-content {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .modal-buttons {
+    flex-direction: column;
+  }
+  
+  .modal-btn {
+    width: 100%;
+  }
+}
