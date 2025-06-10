@@ -151,7 +151,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>GravyJS Demo</h1>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem' }}>
+          <img src="/images/logo.png" alt="GravyJS Logo" style={{ height: '3rem', width: 'auto' }} />
+          <h1 style={{ marginTop: '0.5rem' }}>GravyJS Demo</h1>
+        </div>
         <p>A WYSIWYG editor for React/NextJS applications with configurable variable templates</p>
       </header>
 

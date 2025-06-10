@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "setup": "./scripts/setup.sh",
+    "deploy": "./scripts/deploy.sh",
+    "check:redirect": "./scripts/check-redirect.sh",
+    "debug": "./scripts/debug.sh"
   },
   "keywords": [],
   "author": "",
