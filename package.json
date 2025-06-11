@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "setup": "./scripts/setup.sh",
+    "setup:env": "./scripts/setup-env.sh",
     "deploy": "./scripts/deploy.sh",
     "check:redirect": "./scripts/check-redirect.sh",
     "debug": "./scripts/debug.sh"

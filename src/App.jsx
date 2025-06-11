@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react'
 import GravyJS from 'gravyjs'
 import 'gravyjs/dist/index.css'
 import './App.css'
+import GoogleAnalytics from './GoogleAnalytics'
 
 const sampleSnippets = [
   {
@@ -150,6 +151,7 @@ function App() {
 
   return (
     <div className="App">
+      <GoogleAnalytics />
       <header className="App-header">
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem' }}>
           <img src="/images/logo.png" alt="GravyJS Logo" style={{ height: '3rem', width: 'auto' }} />
