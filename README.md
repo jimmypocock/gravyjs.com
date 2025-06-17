@@ -22,6 +22,7 @@ npm run setup:env  # Set up environment variables
 ```
 
 Edit `.env` and add your Google Analytics ID:
+
 ```env
 VITE_GA_MEASUREMENT_ID=G-YOUR-ID-HERE
 ```
@@ -48,12 +49,14 @@ This demo is deployed to [gravyjs.com](https://gravyjs.com) using AWS S3 and Clo
 ### Deployment
 
 #### From gravyjs-demo directory:
+
 ```bash
 npm run setup    # One-time infrastructure setup
 npm run deploy   # Build and deploy to S3/CloudFront
 ```
 
 #### From gravyprompts.com root:
+
 ```bash
 npm run demo:setup    # One-time infrastructure setup
 npm run demo:deploy   # Build and deploy to S3/CloudFront
@@ -66,9 +69,9 @@ The deploy command builds the app, syncs to S3, and invalidates CloudFront cache
 
 The following environment variables are supported:
 
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `VITE_GA_MEASUREMENT_ID` | Google Analytics Measurement ID | No |
+| Variable                 | Description                     | Required |
+| ------------------------ | ------------------------------- | -------- |
+| `VITE_GA_MEASUREMENT_ID` | Google Analytics Measurement ID | No       |
 
 ## GravyJS Package
 

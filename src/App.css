@@ -83,7 +83,7 @@
   background: #f8f9fa;
   border: none;
   overflow-x: auto;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   font-size: 14px;
   line-height: 1.4;
 }
@@ -288,7 +288,7 @@
   border: 1px solid #ced4da;
   border-radius: 4px;
   font-size: 14px;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   background: white;
   width: 80px;
 }
@@ -303,7 +303,7 @@
   padding: 8px 12px;
   background: #e9ecef;
   border-radius: 4px;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   font-weight: bold;
   color: #0056b3;
   align-self: end;
@@ -347,7 +347,7 @@
   background: #f8f9fa;
   padding: 4px 8px;
   border-radius: 4px;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   color: #0056b3;
   border: 1px solid #dee2e6;
 }
@@ -450,7 +450,7 @@
   padding: 10px;
   border-radius: 6px;
   border-left: 4px solid #007bff;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
 }
 
 .variable-example code {
@@ -517,11 +517,11 @@
     margin: 20px;
     padding: 20px;
   }
-  
+
   .modal-buttons {
     flex-direction: column;
   }
-  
+
   .modal-btn {
     width: 100%;
   }
